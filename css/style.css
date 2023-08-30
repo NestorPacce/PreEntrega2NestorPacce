@@ -6,18 +6,24 @@
  vertical-align: baseline;} 
 
  body {
-   background-color: #e9d1c5;
+  display: grid;
+  grid-template-rows: 0.5fr 10fr 0.5fr;
+  background-color: #e9d1c5;
  }
  .myBody {
   background-color: #e9d1c5;
  }
+ .footer {
+  background-color: #e9b777b7;
+  
+ }
 
  /* ----------- */
 
- header {
+ /* header {
     display: flex;
     background-color: #e9b777b7;
-    height: 8vb;
+    height: 50%;
     width:  100%;
  }
  
@@ -54,6 +60,25 @@
  .nav li ul li {
    position: relative;
  }
+ .a:hover{
+  background-color: #ffffc8;
+  border: 2px ridge #b3b3b3;
+} */
+.nav .nav2 .navMas {
+  display:  none;
+  position:absolute;
+  min-width: 150px;
+}
+.nav .nav2:hover > ul {
+    display: block;
+ }
+ .nav li ul li {
+  position: relative;
+}
+
+
+
+
 
 /* -----unirse------ */
 
@@ -206,11 +231,11 @@ p {
   padding-top: 2%;
 }
 .title {
-  font-size: 6vb;
+  font-size: 5vb;
   margin-bottom: 15vb;
 }
 .title:hover {
-  font-weight: 600;
+  font-weight: 00;
 }
 .articulosImg {
   width: 30vb ;
@@ -218,13 +243,7 @@ p {
   border: 15px groove #f5f5dc;
   border-radius: 10%;
 }
-.a:hover{
-  background-color: #ffffc8;
-  border: 2px ridge #b3b3b3;
-}
-.a {
-  padding: 10px;
-}
+
 @media (max-width: 1140px){
   .articulosImg {
     width: 20vb;
