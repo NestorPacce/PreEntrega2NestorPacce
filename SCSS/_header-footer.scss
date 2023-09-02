@@ -1,0 +1,56 @@
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2vb;
+	background-color: #e9b777b7;
+  }
+  .logoNav {
+	width: 12vb;
+	height: 12vb;
+	border-radius: 50%;
+  }
+  .nav-list {
+	list-style-type: none;
+	display: flex;
+	gap: 5vb;
+  }
+  .nav-list .liNav .aNav {
+	text-decoration: none;
+	color: #1c1c1c;
+  }
+  .aNav {
+	font-size: 3.5vb;
+	border: 1px ridge #000000;
+	padding: 2px;
+	background-color: #ff973655;
+  }
+  .aNav:hover{
+	background-color: #ff7b0055;
+	font-weight: 800;
+  }
+  footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5vb;
+	background-color: #e9b777b7;
+	margin-top: 7vb;
+  }
+  .footer-list {
+	list-style-type: none;
+	display: flex;
+	gap: 5vb;
+  }
+  .footer-list .liFooter .aFooter {
+	text-decoration: underline;
+	color: #1c1c1c;
+  }
+  .aFooter {
+	font-size: 3.5vb;
+	border-radius: 15%;
+  }
+  .aFooter:hover{
+	background-color: #ff7b0055;
+	font-weight: 800;
+  }
