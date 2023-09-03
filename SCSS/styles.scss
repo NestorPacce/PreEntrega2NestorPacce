@@ -7,7 +7,7 @@ body {
 
 .contLogo {
 	display: grid;
-	grid-template-rows: 4fr 1fr 1fr 1fr;
+	grid-template-rows: 3fr 1fr 1fr 1fr;
 	justify-content: center;
 	row-gap: 5vb;
 }
@@ -19,6 +19,7 @@ h1 {
 h2 {
 	text-align: center;
 	font-size: 1.5vb;
+	font-family: $textFont;
 	margin-top: 1vb;
 }
 .logoUnirse {
@@ -29,11 +30,7 @@ h2 {
 	border-radius: 50%;
 	width: 40vb;
 }
-.formularioNombre {
-	font-size: 3vb;
-}
 .formularioCorreo {
-	font-size: 3vb;
 	margin-top: 2vb;
 }
 .button {
@@ -63,7 +60,7 @@ h2 {
 .quienes {
 	text-align: left;
 	font-size: 3vb;
-	font-family: cursive;
+	font-family: $titleFont;
 	text-decoration-line: underline;
 	margin-top: 5vb;
 	margin-left: 2%;
@@ -72,13 +69,14 @@ h2 {
 .donde {
 	text-align: left;
 	font-size: 3vb;
-	font-family: cursive;
+	font-family: $titleFont;
 	text-decoration-line: underline;
 	margin-left: 2%;
 	letter-spacing: 1px;
 }
 p {
-	font-size: 2vb;
+	font-size: 2.5vb;
+	font-family: $textFont;
 	letter-spacing: 1px;
 	background-color: #f3dfb4;
 	margin-right: 4%;
@@ -93,6 +91,7 @@ p {
 }
 .textoVid {
 	font-size: 2.5vb;
+	font-family: 'Times New Roman', Times, serif;
 	margin-top: auto;
 	margin-bottom: auto;
 	padding: 10%;
@@ -117,18 +116,22 @@ p {
 }
 .title {
 	font-size: 6vb;
+	font-family: $titleFont;
 	margin-bottom: 15vb;
 	&:hover {
 		font-weight: 600;
 	}
 }
 .articulosImg {
-	width: 30vb;
-	height: 30vb;
+	width: 25vb;
+	height: 25vb;
 	border: 10px groove #f5f5dc;
 	border-radius: 10%;
 }
 .a {
+	&:visited{
+		color: #86812f;
+		}
 	&:hover {
 		background-color: #e7c7b6;
 		border: 1px ridge #b3b3b3;
@@ -144,13 +147,13 @@ p {
 .contactos {
 	text-align: left;
 	font-size: 3vb;
+	font-family: $titleFont;
 	text-decoration-line: underline;
 	margin-bottom: 3vb;
 	margin-left: 2vb;
 }
-li {
-	font-size: 2vb;
-	letter-spacing: 1px;
+.contactosLista {
+	font-family: $textFont;
 }
 .map {
 	width: 100%;
@@ -181,7 +184,7 @@ li {
 	display: flex;
 	justify-content: center;
 }
-h3.individual {
+.individual {
 	font-size: 3vb;
 	text-decoration-line: underline;
 	text-align: center;

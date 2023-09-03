@@ -243,13 +243,16 @@ p {
   border: 10px groove #f5f5dc;
   border-radius: 10%;
 }
+.a {
+  padding: 10px;
+}
 .a:hover{
   background-color: #ffffc8;
   border: 1px ridge #b3b3b3;
 }
-.a {
-  padding: 10px;
-}
+a:visited {
+	color: rgb(134, 129, 47);
+	}
 @media (max-width: 1140px){
   .articulosImg {
     width: 20vb;
