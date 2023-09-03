@@ -10,7 +10,13 @@ header {
 	width: 12vb;
 	height: 12vb;
 	border-radius: 50%;
+	transition: height 600ms, width 600ms ;
+	&:hover {
+		height: 12.5vb;
+		width: 12.5vb;
+	}
 }
+
 .nav-list {
 	list-style-type: none;
 	display: flex;
@@ -29,7 +35,7 @@ header {
 	background-color: #ff973655;
 	&:hover {
 		background-color: $hoverHF;
-		font-weight: 800;
+		font-weight: 550;
 	}
 }
 footer {

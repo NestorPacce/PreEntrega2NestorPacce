@@ -2,7 +2,7 @@
 @import "colors&Box" ;
 
 body {
-	background-color: #e9d1c5;
+	background: linear-gradient(to left, #e7e1de, #e7bfaa);
 }
 
 .contLogo {
@@ -14,7 +14,7 @@ body {
 h1 {
 	text-align: center;
 	font-size: 5vb;
-	text-decoration: underline #000000;
+	text-shadow: 20px 10px 16px rgba(115, 116, 121, 1);
 }
 h2 {
 	text-align: center;
@@ -29,26 +29,33 @@ h2 {
 .logoUnirseimg {
 	border-radius: 50%;
 	width: 40vb;
+    box-shadow: 5px 20px 24px 1px rgba(66, 68, 90, 1);
+}
+.formularioNombre {
+	@extend .formularioCorreo ;
 }
 .formularioCorreo {
 	margin-top: 2vb;
+	text-align: center;
 }
 .button {
 	text-align: center;
-	font-size: 2.5vb;
 }
 .button1 {
 	@extend .button2 ;
+	
 }
 .button2 {
 	display: inline-block;
-	border: 2px ridge #000000;
-	padding: 1%;
+	padding: 0,5%;
+	border: 1px ridge #000000;
 }
 .boton {
+	border: none;
+	font-size: 1,8vb;
 	&:hover {
 		background-color: #94949455;
-		font-weight: 800;
+		font-weight: 600;
 	}
 }
 .contQuienes {
@@ -118,9 +125,6 @@ p {
 	font-size: 6vb;
 	font-family: $titleFont;
 	margin-bottom: 15vb;
-	&:hover {
-		font-weight: 600;
-	}
 }
 .articulosImg {
 	width: 25vb;
