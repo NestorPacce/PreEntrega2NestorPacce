@@ -198,7 +198,7 @@ p {
 }
 
 .title {
-  font-size: 6vb;
+  font-size: 4vb;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 15vb;
 }
@@ -260,7 +260,7 @@ p {
   margin-bottom: 10vb;
   margin-left: 30vb;
   margin-right: 30vb;
-  border: 10px groove #f5f5dc;
+  border: 15px groove #f5f5dc;
 }
 
 .boxObj {
