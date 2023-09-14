@@ -7,8 +7,8 @@ header {
 	background-color: $backgroundHF;
 }
 .logoNav {
-	width: 12vb;
-	height: 12vb;
+	width: 15vb;
+	height: 15vb;
 	border-radius: 50%;
 	transition: height 600ms, width 600ms ;
 	&:hover {
@@ -28,7 +28,7 @@ header {
 		}
 	}
 }
-.aNav {
+.aNav { max-width: 2000px;
 	font-size: 3.5vb;
 	border: 1px ridge #000000;
 	padding: 2px;
@@ -66,3 +66,53 @@ footer {
 	}
 }
 
+@media screen and (max-width: 821px) {
+    .nav-list {
+        gap: 2vb;
+        font-size: 2vb;
+    }
+}
+@media screen and (max-height: 440px) {
+	.nav-list {
+		flex-direction: column;
+		font-size: 1vb;
+    }
+}
+@media screen and (max-width: 320px) {
+    .nav-list {
+		flex-direction: column;
+		gap: 2.5vb;
+		text-align: start;
+    }
+}
+@media screen and (max-width: 570px) {
+	.aNav {
+		font-size: 2.5vb;
+	}
+}
+@media screen and (max-width: 365px) {
+	.aFooter {
+		font-size: 2vb;
+	}
+}
+@media screen and (max-width: 696px) {
+	.aFooter {
+		font-size: 2.5vb;
+	}
+}
+@media screen and (max-height: 845px) {
+	.nav-list {
+		flex-direction: column;
+		gap: 1.5vb;
+	}
+}
+@media screen and (max-height: 897px) {
+	.nav-list {
+		flex-direction: column;
+	}
+}
+@media screen and (max-height: 915px) {
+	.nav-list {
+		flex-direction: column;
+	}
+}

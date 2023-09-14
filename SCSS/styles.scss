@@ -169,14 +169,14 @@ p {
 	margin: 0px 10% 0px 10%;
 }
 .articulosImg1 {
-	width: 100vb;
-	height: 40vb;
+	width: 70%;
+	height: 70%;
 	display: inline-block;
 	margin-top: 10vb;
 	margin-bottom: 10vb;
 	margin-left: 30vb;
 	margin-right: 30vb;
-	border: 15px groove #f5f5dc;
+	border: 10px groove #f5f5dc;
 }
 .boxObj {
 	display: flex;
@@ -209,34 +209,12 @@ p {
 	justify-content: center;
 	gap: 2vb;
 }
-@media (max-width: 821px) {
-    .nav-list {
-        gap: 2vb;
-        font-size: 2vb;
-    }
-}
-@media (max-width: 821px) {
-    .liNav {
-        gap: 2vb;
-        font-size: 2vb;
-    }
-}
-@media (max-width: 570px) {
-	.aNav {
-		font-size: 2.5vb;
+@media screen and (max-width: 1140px) {
+	.articulosImg {
+		width: 20vb;
+		height: 20vb;
 	}
-}
-@media (max-width: 365px) {
-	.aFooter {
-		font-size: 2vb;
-	}
-}
-@media (max-width: 696px) {
-	.aFooter {
-		font-size: 2.5vb;
-	}
-}
-@media (max-width: 415px) {
+@media screen and (max-width: 415px) {
 	.logoUnirseimg {
 		width: 30vb;
 	}
@@ -252,11 +230,19 @@ p {
 		margin-top: 1.8vb;
 	}
 	.articulosImg {
-		width: 10vb;
-		height: 10vb;
+		width: 17vb;
+		height: 17vb;
+		border: 5px groove #f5f5dc;
+	    border-radius: 10%;
 	}
 }
-@media (max-width: 420px) {
+@media screen and (max-width: 310px) {
+	.articulosImg {
+		width: 13vb;
+		height: 13vb;
+	}
+}
+@media screen and (max-width: 420px) {
 	.quienes {
 		font-size: 2.5vb;
 	}
@@ -273,17 +259,12 @@ p {
 		font-size: 2vb;
 	}
 }
-@media (max-width: 1140px) {
-	.articulosImg {
-		width: 20vb;
-		height: 20vb;
-	}
 	.title {
 		font-size: 5vb;
 		margin-bottom: 12vb;
 	}
 }
-@media (max-width: 840px) {
+@media screen and (max-width: 840px) {
 	.title {
 		font-size: 3vb;
 		margin-bottom: 8vb;
@@ -292,13 +273,23 @@ p {
 		grid-template-columns: 1fr 1fr;
 	}
 }
-
-/* var numero=0;
-
-for (var i=1; i<=10; i++)
-
-if (i%2 == 0) {
-	numero += i;
+@media screen and (max-height: 440px) {
+	.articulosImg {
+		width: 17vb;
+		height: 17vb;
+	}
 }
+@media screen and (max-height: 897px) {
+	.articulosImg {
+		width: 14vb;
+		height: 14vb;
 
-document.write(numero); */
+	}
+}
+@media screen and (max-height: 915px) {
+	.articulosImg {
+		width: 13vb;
+		height: 13vb;
+
+	}
+}
