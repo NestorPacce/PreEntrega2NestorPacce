@@ -6,13 +6,13 @@ header {
   background-color: rgba(233, 183, 119, 0.7176470588);
 }
 
-.logoNav {
+.logo-nav {
   width: 15vb;
   height: 15vb;
   border-radius: 50%;
   transition: height 600ms, width 600ms;
 }
-.logoNav:hover {
+.logo-nav:hover {
   height: 12.5vb;
   width: 12.5vb;
 }
@@ -22,49 +22,81 @@ header {
   display: flex;
   gap: 5vb;
 }
-.nav-list .liNav .aNav {
+.nav-list .li-nav .a-nav {
   text-decoration: none;
   color: #1c1c1c;
 }
 
-.aNav {
+.a-nav {
   max-width: 2000px;
   font-size: 3.5vb;
   border: 1px ridge #000000;
   padding: 2px;
   background-color: rgba(255, 151, 54, 0.3333333333);
 }
-.aNav:hover {
+.a-nav:hover {
   background-color: rgba(255, 123, 0, 0.3333333333);
   font-weight: 550;
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5vb;
+  padding: 2vb;
   background-color: rgba(233, 183, 119, 0.7176470588);
   margin-top: 7vb;
 }
 
 .footer-list {
+  gap: 4vb;
   list-style-type: none;
   display: flex;
-  gap: 5vb;
+  align-items: center;
+  justify-content: center;
 }
-.footer-list .liFooter .aFooter {
-  text-decoration: underline;
+.footer-list .li-footer {
+  display: flex;
+}
+.footer-list .li-footer .a-footer {
+  text-decoration: none;
   color: #1c1c1c;
-}
-
-.aFooter {
   font-size: 3.5vb;
   border-radius: 15%;
+  margin-top: 1vb;
 }
-.aFooter:hover {
+.footer-list .li-footer .a-footer:hover {
   background-color: rgba(255, 123, 0, 0.3333333333);
   font-weight: 800;
+}
+
+.li-footer-contactos {
+  margin-top: 1vb;
+}
+.li-footer-contactos .a-footer {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 3.5vb;
+  border-radius: 15%;
+  margin-top: 10px;
+}
+.li-footer-contactos .a-footer:hover {
+  background-color: rgba(255, 123, 0, 0.3333333333);
+  font-weight: 800;
+}
+
+.h3-ig {
+  border-top: #000000 solid;
+  padding-top: 3vb;
+  font-size: 2vb;
+}
+
+.h3-contactos {
+  padding-top: 1vb;
+  font-size: 2vb;
+}
+
+.h3s {
+  border-top: #000000 solid;
+  padding-top: 1vb;
+  font-size: 20vb;
 }
 
 @media screen and (max-width: 821px) {
@@ -87,17 +119,17 @@ footer {
   }
 }
 @media screen and (max-width: 570px) {
-  .aNav {
+  .a-nav {
     font-size: 2.5vb;
   }
 }
 @media screen and (max-width: 365px) {
-  .aFooter {
+  .a-footer {
     font-size: 2vb;
   }
 }
 @media screen and (max-width: 696px) {
-  .aFooter {
+  .a-footer {
     font-size: 2.5vb;
   }
 }
@@ -121,7 +153,7 @@ body {
   background: linear-gradient(to left, #e7e1de, #e7bfaa);
 }
 
-.contLogo {
+.cont-logo {
   display: grid;
   grid-template-rows: 3fr 1fr 1fr 1fr;
   justify-content: center;
@@ -141,18 +173,18 @@ h2 {
   margin-top: 1vb;
 }
 
-.logoUnirse {
+.logo-unirse {
   margin-top: 5vb;
   text-align: center;
 }
 
-.logoUnirseimg {
+.logo-unirseimg {
   border-radius: 50%;
   width: 40vb;
   box-shadow: 5px 20px 24px 1px rgb(66, 68, 90);
 }
 
-.formularioCorreo, .formularioNombre {
+.formulario-correo, .formulario-nombre {
   margin-top: 2vb;
   text-align: center;
 }
@@ -176,9 +208,9 @@ h2 {
   font-weight: 600;
 }
 
-.contQuienes {
+.cont-quienes {
   display: grid;
-  grid-template-rows: 1fr 1.5fr 1fr;
+  grid-template-rows: 0.5fr 1.5fr 0.5fr;
   justify-content: center;
   row-gap: 8vb;
 }
@@ -214,30 +246,30 @@ p {
   margin-top: 2%;
 }
 
-.boxVid {
+.box-vid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.textoVid {
-  font-size: 2.5vb;
+.texto-vid {
+  font-size: 3vb;
   font-family: "Times New Roman", Times, serif;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding: 10%;
+  padding: 2%;
+  text-align: center;
 }
 
-.linkBox {
-  display: grid;
+.link-box {
+  text-align: center;
+  justify-content: center;
 }
 
-.videoLink {
+.video-link {
   border-radius: 5%;
   width: 70%;
-  height: 80%;
+  height: 90%;
 }
 
-.bodyInicio {
+.body-inicio {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 4vb;
@@ -253,7 +285,7 @@ p {
   margin-bottom: 15vb;
 }
 
-.articulosImg {
+.articulos-img {
   width: 25vb;
   height: 25vb;
   border: 10px groove #f5f5dc;
@@ -287,7 +319,7 @@ p {
   margin-left: 2vb;
 }
 
-.contactosLista {
+.contactos-lista {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -302,7 +334,7 @@ p {
   margin: 0px 10% 0px 10%;
 }
 
-.articulosImg1 {
+.articulos-img1 {
   width: 70%;
   height: 70%;
   display: inline-block;
@@ -313,13 +345,13 @@ p {
   border: 10px groove #f5f5dc;
 }
 
-.boxObj {
+.box-obj {
   display: flex;
   justify-content: center;
   margin-top: 5vb;
 }
 
-.boxObjText {
+.box-obj-text {
   display: flex;
   justify-content: center;
 }
@@ -350,7 +382,7 @@ p {
 }
 
 @media screen and (max-width: 1140px) {
-  .articulosImg {
+  .articulos-img {
     width: 20vb;
     height: 20vb;
   }
@@ -360,26 +392,26 @@ p {
     font-size: 3vb;
     margin-bottom: 8vb;
   }
-  .bodyInicio {
+  .body-inicio {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 415px) {
-  .logoUnirseimg {
+  .logo-unirseimg {
     width: 30vb;
   }
   .contLogo {
     grid-template-rows: 4fr 1.5fr 1.5fr 1fr;
     row-gap: 2vb;
   }
-  .formularioNombre {
+  .formulario-nombre {
     font-size: 2.5vb;
   }
-  .formularioCorreo, .formularioNombre {
+  .formulario-correo, .formulario-nombre {
     font-size: 2.5vb;
     margin-top: 1.8vb;
   }
-  .articulosImg {
+  .articulos-img {
     width: 17vb;
     height: 17vb;
     border: 5px groove #f5f5dc;
@@ -387,7 +419,7 @@ p {
   }
 }
 @media screen and (max-width: 310px) {
-  .articulosImg {
+  .articulos-img {
     width: 13vb;
     height: 13vb;
   }
@@ -396,7 +428,7 @@ p {
   .quienes {
     font-size: 2.5vb;
   }
-  .contQuienes {
+  .cont-quienes {
     row-gap: 4vb;
   }
   .donde {
@@ -405,7 +437,7 @@ p {
   p {
     font-size: 1.5vb;
   }
-  .textoVid {
+  .texto-vid {
     font-size: 2vb;
   }
   .title {
@@ -414,19 +446,19 @@ p {
   }
 }
 @media screen and (max-height: 440px) {
-  .articulosImg {
+  .articulos-img {
     width: 17vb;
     height: 17vb;
   }
 }
 @media screen and (max-height: 897px) {
-  .articulosImg {
+  .articulos-img {
     width: 14vb;
     height: 14vb;
   }
 }
 @media screen and (max-height: 915px) {
-  .articulosImg {
+  .articulos-img {
     width: 13vb;
     height: 13vb;
   }

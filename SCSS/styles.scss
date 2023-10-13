@@ -5,7 +5,7 @@ body {
 	background: linear-gradient(to left, #e7e1de, #e7bfaa);
 }
 
-.contLogo {
+.cont-logo {
 	display: grid;
 	grid-template-rows: 3fr 1fr 1fr 1fr;
 	justify-content: center;
@@ -16,25 +16,28 @@ h1 {
 	font-size: 5vb;
 	text-shadow: 20px 10px 16px rgba(115, 116, 121, 1);
 }
+.h1-catalogo {
+
+}
 h2 {
 	text-align: center;
 	font-size: 1.5vb;
 	font-family: $textFont;
 	margin-top: 1vb;
 }
-.logoUnirse {
+.logo-unirse {
 	margin-top: 5vb;
 	text-align: center;
 }
-.logoUnirseimg {
+.logo-unirseimg {
 	border-radius: 50%;
 	width: 40vb;
     box-shadow: 5px 20px 24px 1px rgba(66, 68, 90, 1);
 }
-.formularioNombre {
-	@extend .formularioCorreo ;
+.formulario-nombre {
+	@extend .formulario-correo ;
 }
-.formularioCorreo {
+.formulario-correo {
 	margin-top: 2vb;
 	text-align: center;
 }
@@ -58,9 +61,9 @@ h2 {
 		font-weight: 600;
 	}
 }
-.contQuienes {
+.cont-quienes {
 	display: grid;
-	grid-template-rows: 1fr 1.5fr 1fr;
+	grid-template-rows: 0.5fr 1.5fr 0.5fr;
 	justify-content: center;
 	row-gap: 8vb;
 }
@@ -92,27 +95,27 @@ p {
 	padding: 2%;
 	margin-top: 2%;
 }
-.boxVid {
+.box-vid {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
-.textoVid {
-	font-size: 2.5vb;
+.texto-vid {
+	font-size: 3vb;
 	font-family: 'Times New Roman', Times, serif;
-	margin-top: auto;
-	margin-bottom: auto;
-	padding: 10%;
+	padding: 2%;
+	text-align: center;
 }
-.linkBox {
-	display: grid;
-	
+.link-box {
+	text-align: center;
+	justify-content: center;
+
 }
-.videoLink {
+.video-link {
 	border-radius: 5%;
 	width: 70%;
-	height: 80%;
+	height: 90%;
 }
-.bodyInicio {
+.body-inicio {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 4vb;
@@ -126,7 +129,7 @@ p {
 	font-family: $titleFont;
 	margin-bottom: 15vb;
 }
-.articulosImg {
+.articulos-img {
 	width: 25vb;
 	height: 25vb;
 	border: 10px groove #f5f5dc;
@@ -156,7 +159,7 @@ p {
 	margin-bottom: 3vb;
 	margin-left: 2vb;
 }
-.contactosLista {
+.contactos-lista {
 	font-family: $textFont;
 }
 .map {
@@ -168,7 +171,7 @@ p {
 	border: $boxType;
 	margin: 0px 10% 0px 10%;
 }
-.articulosImg1 {
+.articulos-img1 {
 	width: 70%;
 	height: 70%;
 	display: inline-block;
@@ -178,12 +181,12 @@ p {
 	margin-right: 30vb;
 	border: 10px groove #f5f5dc;
 }
-.boxObj {
+.box-obj {
 	display: flex;
 	justify-content: center;
 	margin-top: 5vb;
 }
-.boxObjText {
+.box-obj-text {
 	display: flex;
 	justify-content: center;
 }
@@ -210,7 +213,7 @@ p {
 	gap: 2vb;
 }
 @media screen and (max-width: 1140px) {
-	.articulosImg {
+	.articulos-img {
 		width: 20vb;
 		height: 20vb;
 	}
@@ -220,26 +223,26 @@ p {
 		font-size: 3vb;
 		margin-bottom: 8vb;
 	}
-	.bodyInicio {
+	.body-inicio {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 @media screen and (max-width: 415px) {
-	.logoUnirseimg {
+	.logo-unirseimg {
 		width: 30vb;
 	}
 	.contLogo {
 		grid-template-rows: 4fr 1.5fr 1.5fr 1fr;
 		row-gap: 2vb;
 	}
-	.formularioNombre {
+	.formulario-nombre {
 		font-size: 2.5vb;
 	}
-	.formularioCorreo {
+	.formulario-correo {
 		font-size: 2.5vb;
 		margin-top: 1.8vb;
 	}
-	.articulosImg {
+	.articulos-img {
 		width: 17vb;
 		height: 17vb;
 		border: 5px groove #f5f5dc;
@@ -247,7 +250,7 @@ p {
 	}
 }
 @media screen and (max-width: 310px) {
-	.articulosImg {
+	.articulos-img {
 		width: 13vb;
 		height: 13vb;
 	}
@@ -256,7 +259,7 @@ p {
 	.quienes {
 		font-size: 2.5vb;
 	}
-	.contQuienes {
+	.cont-quienes {
 		row-gap: 4vb;
 	}
 	.donde {
@@ -265,7 +268,7 @@ p {
 	p {
 		font-size: 1.5vb;
 	}
-	.textoVid {
+	.texto-vid {
 		font-size: 2vb;
 	}
 	.title {
@@ -274,20 +277,20 @@ p {
 	}
 }
 @media screen and (max-height: 440px) {
-	.articulosImg {
+	.articulos-img {
 		width: 17vb;
 		height: 17vb;
 	}
 }
 @media screen and (max-height: 897px) {
-	.articulosImg {
+	.articulos-img {
 		width: 14vb;
 		height: 14vb;
 
 	}
 }
 @media screen and (max-height: 915px) {
-	.articulosImg {
+	.articulos-img {
 		width: 13vb;
 		height: 13vb;
 
