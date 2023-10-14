@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HË☽NË / ¿Quienes somos?</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta property="og:description"content="La mejor pagina de articulos">
     <meta name="description" content="Somos Nombre de pagina y tenemos la mejro atencion....">
     <meta name="keywords" content="joyería, joyeria, joyas, ropa, prendas, anillos, remeras, remera, buzos, oversise, jeans, ropa mujer, ropa hombre, mayorista">
@@ -39,7 +40,7 @@
     </header>
 
     <div class="cont-quienes">
-        <div>
+        <div data-aos="fade-right">
             <h2  class="quienes">
                 ¿Quienes somos?
             </h2>
@@ -52,12 +53,14 @@
                     Preparamos este breve corto para que puedas conocer un  poco mas sobre nosotros...
                 </h3>
             </div>
-            <div class="link-box">
+            <div class="link-box" 
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
                 <iframe class="video-link" width="200" height="200" src="https://www.youtube.com/embed/KeZE8oh5bn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>   
                 </iframe>   
             </div>
         </div>
-        <div>
+        <div data-aos="fade-left">
             <h2 class="donde">
                 ¿Donde nos encontraras?
             </h2>
@@ -99,5 +102,9 @@
             </h3>  
         </section>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

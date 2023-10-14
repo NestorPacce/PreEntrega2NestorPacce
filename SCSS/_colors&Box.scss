@@ -3,3 +3,10 @@ $hoverHF: #ff7b0055 ;
 $boxType: 5px solid #f3c053 ;
 $titleFont: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
 $textFont: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+
+
+@mixin h1s ($shadow:none, $font:5vb){
+    text-align: center;
+	font-size: $font;
+	text-shadow: $shadow;
+}

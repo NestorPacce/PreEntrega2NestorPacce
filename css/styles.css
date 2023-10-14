@@ -160,6 +160,24 @@ body {
   row-gap: 5vb;
 }
 
+.h1-catalogo {
+  text-align: center;
+  font-size: 5vb;
+  text-shadow: none;
+}
+
+@media screen and (max-width: 430px) {
+  .h1-catalogo {
+    font-size: 3.5vb;
+  }
+}
+.h1-contactos {
+  text-align: center;
+  font-size: 3vb;
+  text-shadow: none;
+  text-align: start;
+}
+
 h1 {
   text-align: center;
   font-size: 5vb;
@@ -171,6 +189,13 @@ h2 {
   font-size: 1.5vb;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-top: 1vb;
+}
+
+.contactos {
+  text-align: center;
+  font-size: 3vb;
+  text-shadow: none;
+  text-align: start;
 }
 
 .logo-unirse {
@@ -216,22 +241,15 @@ h2 {
 }
 
 .quienes {
-  text-align: left;
-  font-size: 3vb;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration-line: underline;
   margin-top: 5vb;
-  margin-left: 2%;
-  letter-spacing: 1px;
 }
 
-.donde {
-  text-align: left;
+.donde, .quienes {
+  text-align: center;
   font-size: 3vb;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration-line: underline;
-  margin-left: 2%;
-  letter-spacing: 1px;
+  text-shadow: none;
+  text-align: start;
+  text-decoration: underline;
 }
 
 p {
@@ -310,7 +328,7 @@ p {
   margin-bottom: 5vb;
 }
 
-.contactos {
+#contactos {
   text-align: left;
   font-size: 3vb;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -431,7 +449,7 @@ p {
   .cont-quienes {
     row-gap: 4vb;
   }
-  .donde {
+  .donde, .quienes {
     font-size: 2.5vb;
   }
   p {

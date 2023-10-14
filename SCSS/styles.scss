@@ -11,13 +11,20 @@ body {
 	justify-content: center;
 	row-gap: 5vb;
 }
-h1 {
-	text-align: center;
-	font-size: 5vb;
-	text-shadow: 20px 10px 16px rgba(115, 116, 121, 1);
-}
 .h1-catalogo {
-
+	@include h1s
+}
+@media screen and (max-width: 430px){
+	.h1-catalogo {
+		font-size: 3.5vb;
+	}
+}
+.h1-contactos {
+	@include h1s (none,3vb);
+	text-align: start;
+}
+h1 {
+	@include h1s (20px 10px 16px rgba(115, 116, 121, 1))
 }
 h2 {
 	text-align: center;
@@ -25,6 +32,11 @@ h2 {
 	font-family: $textFont;
 	margin-top: 1vb;
 }
+.contactos {
+	@include h1s (none,3vb);
+	text-align: start;
+}
+
 .logo-unirse {
 	margin-top: 5vb;
 	text-align: center;
@@ -68,21 +80,13 @@ h2 {
 	row-gap: 8vb;
 }
 .quienes {
-	text-align: left;
-	font-size: 3vb;
-	font-family: $titleFont;
-	text-decoration-line: underline;
+	@extend .donde ;
 	margin-top: 5vb;
-	margin-left: 2%;
-	letter-spacing: 1px;
 }
 .donde {
-	text-align: left;
-	font-size: 3vb;
-	font-family: $titleFont;
-	text-decoration-line: underline;
-	margin-left: 2%;
-	letter-spacing: 1px;
+	@include h1s (none,3vb);
+	text-align: start;
+	text-decoration: underline;
 }
 p {
 	font-size: 2.5vb;
@@ -108,7 +112,6 @@ p {
 .link-box {
 	text-align: center;
 	justify-content: center;
-
 }
 .video-link {
 	border-radius: 5%;
@@ -151,7 +154,7 @@ p {
 	margin-top: 5vb;
 	margin-bottom: 5vb;
 }
-.contactos {
+#contactos {
 	text-align: left;
 	font-size: 3vb;
 	font-family: $titleFont;
